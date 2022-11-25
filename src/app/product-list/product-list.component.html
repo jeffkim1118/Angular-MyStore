@@ -5,7 +5,8 @@
 
   <h3>
     <!-- Set the title to be the product's name by using the property binding '[]' syntax -->
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'"
+       [routerLink]="['/products', product.id]">
       {{ product.name }}
     </a>
   </h3>
